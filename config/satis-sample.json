@@ -1,0 +1,12 @@
+{
+    "name": "corp/packages",
+    "homepage": "https://packages.corp.com/",
+    "repositories": [
+        {
+            "name": "corp/my-package",
+            "type": "vcs",
+            "url": "git@github.corp.com:corp/my-package.git"
+        }
+    ],
+    "require-all": true
+}

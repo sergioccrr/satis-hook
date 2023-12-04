@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  satis:
+    build:
+      context: .
+      dockerfile: .docker/Dockerfile
+    volumes:
+      - ./config:/build
+      - ./public:/var/www/html
+      - ${HOME:?err}/.ssh:/root/.ssh:ro
+      - ${COMPOSER_HOME:-$HOME/.composer}:/composer
